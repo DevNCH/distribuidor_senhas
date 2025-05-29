@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Gerenciamento de Senhas - Posto de Saúde</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f7f7f7;
+      text-align: center;
+      padding: 40px;
+    }
+    .logos {
+      margin-bottom: 30px;
+    }
+    .logos img {
+      height: 100px;
+      margin: 0 20px;
+    }
+    #senha {
+      font-size: 100px;
+      color: #e60000;
+      margin: 50px 0;
+    }
+    button {
+      font-size: 30px;
+      padding: 15px 30px;
+      background-color: #2e86de;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #1a5cad;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logos">
+    <img src="logo-prefeitura.png" alt="Prefeitura de Palhoça">
+    <img src="logo-fmp.png" alt="FMP">
+  </div>
+
+  <div id="senha">A000</div>
+
+  <button onclick="chamarProximaSenha()">Chamar Próxima Senha</button>
+
+  <script>
+    function formatarSenha(n) {
+      return "A" + n.toString().padStart(3, '0');
+    }
+
+    // Recuperar última senha do navegador
+    let senhaAtual = parseInt(localStorage.getItem("senhaAtual") || "0");
+
+    // Atualizar a senha na tela
+    function atualizarTela() {
+      document.getElementById("senha").innerText = formatarSenha(senhaAtual);
+    }
+
+    function chamarProximaSenha() {
+      senhaAtual++;
+      localStorage.setItem("senhaAtual", senhaAtual);
+      atualizarTela();
+    }
+
+    atualizarTela(); // mostrar senha atual ao carregar
+  </script>
+
+</body>
+</html>
