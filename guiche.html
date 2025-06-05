@@ -19,7 +19,7 @@
     const guiche = "Guichê 1"; // Trocar conforme o guichê
 
     async function chamarSenha() {
-      const response = await fetch("http://localhost:3000/chamar", {
+      const response = await fetch("http://26.163.174.90:3000/chamar", {
         method: "POST",
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ guiche })

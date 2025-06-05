@@ -25,10 +25,10 @@
 
   <script>
     async function atualizarPainel() {
-      const ultima = await fetch("http://localhost:3000/ultima").then(r => r.json());
+      const ultima = await fetch("http://26.163.174.90:3000/ultima").then(r => r.json());
       document.getElementById("atual").innerText = ultima.senha;
 
-      const historico = await fetch("http://localhost:3000/historico").then(r => r.json());
+      const historico = await fetch("http://26.163.174.90:3000/hishttptorico").then(r => r.json());
       const tbody = document.querySelector("#tabela tbody");
       tbody.innerHTML = "";
       historico.forEach(item => {
