@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel Principal</title>
+  <style>
+    body { text-align: center; font-family: sans-serif; background: #f7f7f7; padding: 30px; }
+    #atual { font-size: 80px; color: #e60000; }
+    table { margin: 30px auto; border-collapse: collapse; }
+    th, td { padding: 10px 20px; border: 1px solid #ccc; font-size: 20px; }
+  </style>
+</head>
+<body>
+
+  <h1>SENHA ATUAL</h1>
+  <div id="atual">A000</div>
+
+  <h2>Histórico de Senhas</h2>
+  <table id="tabela">
+    <thead>
+      <tr><th>Senha</th><th>Guichê</th><th>Hora</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script>
+    async function atualizarPainel() {
+      const ultima = await fetch("http://26.163.174.90:3000/ultima").then(r => r.json());
+      document.getElementById("atual").innerText = ultima.senha;
+
+      const historico = await fetch("http://26.163.174.90:3000/hishttptorico").then(r => r.json());
+      const tbody = document.querySelector("#tabela tbody");
+      tbody.innerHTML = "";
+      historico.forEach(item => {
+        tbody.innerHTML += `<tr><td>${item.senha}</td><td>${item.guiche}</td><td>${item.hora}</td></tr>`;
+      });
+    }
+
+    setInterval(atualizarPainel, 2000); // Atualiza a cada 2 segundos
+    atualizarPainel();
+  </script>
+
+</body>
+</html>
