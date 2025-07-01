@@ -1,112 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sistema de Senhas - Posto de Saúde</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #ffffff;
-    }
-
-    .container {
-      display: flex;
-      height: 100vh;
-      border: none;
-    }
-
-    .coluna-esquerda {
-      flex: 6;
-      border-right: 5px solid black;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .coluna-direita {
-      flex: 4;
-      background-color: white;
-    }
-
-    .cabecalho {
-      background-color: #002d62;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      font-size: 45px;
-      font-weight: bold;
-      text-shadow:
-        -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px  1px 0 #000,
-        1px  1px 0 #000;
-    }
-
-    .senha-atual {
-      text-align: center;
-      margin-top: 50px;
-    }
-
-    .senha-atual h2 {
-      margin-top: 15%;
-      font-size: 100px;
-      margin-bottom: 10px;
-    }
-
-    .senha-atual .numero-senha {
-      font-size: 200px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    .senha-atual .guiche {
-      font-size: 100px;
-      font-weight: 700;
-    }
-
-    .logos {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      padding: 20px;
-      border-top: 5px solid white;
-    }
-
-    .logos img {
-      height: 100px;
-    }
-
-    .coluna-direita .cabecalho {
-      background-color: #2c9ad1;
-    }
-
-    .senhas-anteriores {
-      padding: 20px;
-      color: black;
-    }
-
-    .senha-anterior {
-      margin-bottom: 30px;
-      text-align: center;
-    }
-
-    .senha-anterior h3 {
-      font-size: 75px;
-      font-weight: bold;
-    }
-
-    .senha-anterior p {
-      font-size: 60px;
-    }
-  </style>
+  <link rel="stylesheet" href="public/style.css">
 </head>
+
 <body>
   <div class="container">
     <!-- Coluna da senha atual -->
@@ -115,13 +16,13 @@
         <div class="cabecalho">SENHA ATENDIMENTO</div>
         <div class="senha-atual">
           <h2>SENHA</h2>
-          <div class="numero-senha" id="senhaAtual">XXX</div>
-          <div class="guiche" id="guicheAtual">Guichê x</div>
+          <div class="numero-senha" id="senhaAtual"></div>
+          <div class="guiche" id="guicheAtual"></div>
         </div>
       </div>
       <div class="logos">
-        <img src="logo_Prefeitura_Palhoca.png" alt="Prefeitura de Palhoça">
-        <img src="logo_FMP.png" alt="Faculdade Municipal de Palhoça">
+        <img src="images/logo_Prefeitura_Palhoca.png" alt="Prefeitura de Palhoça">
+        <img src="images/logo_FMP.png" alt="Faculdade Municipal de Palhoça">
       </div>
     </div>
 
@@ -129,24 +30,11 @@
     <div class="coluna-direita">
       <div class="cabecalho">SENHAS ANTERIORES</div>
       <div class="senhas-anteriores" id="anteriores">
-        <div class="senha-anterior">
-          <h3>SENHA XXX</h3>
-          <p>Guichê x</p>
-        </div>
-        <div class="senha-anterior">
-          <h3>SENHA XXX</h3>
-          <p>Guichê x</p>
-        </div>
-        <div class="senha-anterior">
-          <h3>SENHA XXX</h3>
-          <p>Guichê x</p>
-        </div>
-        <div class="senha-anterior">
-          <h3>SENHA XXX</h3>
-          <p>Guichê x</p>
-        </div>
+        <!-- Conteúdo dinâmico aqui -->
       </div>
     </div>
   </div>
+  <script src="public/painel.js"></script>
 </body>
+
 </html>

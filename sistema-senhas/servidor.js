@@ -22,13 +22,9 @@ app.post('/chamar', (req, res) => {
   const registro = { senha: senhaFormatada, guiche, hora: new Date().toLocaleTimeString() };
 
   historico.unshift(registro); // adiciona ao início
-  if (historico.length > 10) historico.pop(); // limita o histórico
+  if (historico.length > 5) historico.pop(); // limita o histórico
 
   res.json(registro);
-});
-
-app.get('/ultima', (req, res) => {
-  res.json({ senha: formatarSenha(senhaAtual) });
 });
 
 app.get('/historico', (req, res) => {
@@ -38,4 +34,3 @@ app.get('/historico', (req, res) => {
 app.listen(3000, "0.0.0.0", () => {
   console.log("Servidor rodando na rede na porta 3000");
 });
-
