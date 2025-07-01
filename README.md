@@ -1,7 +1,6 @@
 passoa a passo:
 1. instalar nodejs
-Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
-
-2. rodar o comando "npm install express" no cmd na pasta dos arquivos do programa
-3. rodar o comando "npm install cors" no cmd na pasta dos arquivos do programa
-4. rodar o comando "node servidor.js" no cmd na pasta dos arquivos do programa
+2. rodar o comando "Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process" no cmd na pasta dos arquivos do programa
+3. rodar o comando "npm install express" no cmd na pasta dos arquivos do programa
+4. rodar o comando "npm install cors" no cmd na pasta dos arquivos do programa
+5. rodar o comando "node servidor.js" no cmd na pasta dos arquivos do programa
