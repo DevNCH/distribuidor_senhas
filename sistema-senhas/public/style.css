@@ -98,3 +98,74 @@ body {
 .senha-anterior p {
   font-size: 60px;
 }
+
+#blocoSenhaManual {
+  background-color: #f4f4f4;
+  border: 3px solid #002d62;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 30px auto;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  color: #002d62;
+}
+
+#blocoSenhaManual label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+}
+
+#blocoSenhaManual input {
+  border: 2px solid #002d62;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+}
+
+#blocoSenhaManual button {
+  margin-top: 15px;
+  background-color: #002d62;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#blocoSenhaManual button:hover {
+  background-color: #001a3d;
+}
+
+#blocoSenhaManual .status {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.manual {
+  margin-top: 30px;
+  text-align: center;
+}
+.manual input {
+  font-size: 20px;
+  padding: 5px;
+  width: 80px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.manual button {
+  font-size: 18px;
+  padding: 8px 16px;
+  margin-left: 10px;
+}
+.status {
+  margin-top: 10px;
+  font-weight: bold;
+}
