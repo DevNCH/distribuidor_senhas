@@ -20,24 +20,24 @@ Ele é composto por um **servidor Node.js** (empacotado em `.exe` para facilitar
 ## 📂 Estrutura de pastas
 
 projeto/
-│── data/ # Arquivos de dados
-│ └── estado_senha.json
-│── images/ # Arquivos de imagens utilizadas no site
-│ ├── logo_FMP.png
-│ └── logo_Prefeitura_Palhoca.png
-│── public/ # Arquivos estáticos acessados pelo navegador
-│ ├── guiche.js
-│ ├── painel.js
-│ └── style.css
-│── views/ # Páginas
-│ ├── guiche_1.html
-│ ├── guiche_2.html
-│ ├── guiche_3.html
-│ ├── guiche_4.html
-│ ├── guiche_5.html
-│ └── index.html
-│── unins000.exe # Desinstalador gerado pelo instalador
-└── sistema-senhas.exe # Servidor empacotado para Windows
+│── data/ # Arquivos de dados  
+│ └── estado_senha.json  
+│── images/ # Arquivos de imagens utilizadas no site  
+│ ├── logo_FMP.png  
+│ └── logo_Prefeitura_Palhoca.png  
+│── public/ # Arquivos estáticos acessados pelo navegador  
+│ ├── guiche.js  
+│ ├── painel.js  
+│ └── style.css  
+│── views/ # Páginas  
+│ ├── guiche_1.html  
+│ ├── guiche_2.html  
+│ ├── guiche_3.html  
+│ ├── guiche_4.html  
+│ ├── guiche_5.html  
+│ └── index.html  
+│── unins000.exe # Desinstalador gerado pelo instalador  
+└── sistema-senhas.exe # Servidor empacotado para Windows  
 
 ---
 
