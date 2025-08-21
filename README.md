@@ -19,23 +19,24 @@ Ele é composto por um **servidor Node.js** (empacotado em `.exe` para facilitar
 
 ## 📂 Estrutura de pastas
 
-projeto/
+Sistema de Senhas
 │── data/ # Arquivos de dados  
 │ └── estado_senha.json  
-│── images/ # Arquivos de imagens utilizadas no site  
+│── images/ # Imagens usadas no sistema  
 │ ├── logo_FMP.png  
 │ └── logo_Prefeitura_Palhoca.png  
-│── public/ # Arquivos estáticos acessados pelo navegador  
+│── public/ # Arquivos JS e CSS  
 │ ├── guiche.js  
 │ ├── painel.js  
 │ └── style.css  
-│── views/ # Páginas  
+│── views/ # Páginas HTML dos guichês e painel  
 │ ├── guiche_1.html  
 │ ├── guiche_2.html  
 │ ├── guiche_3.html  
 │ ├── guiche_4.html  
 │ ├── guiche_5.html  
 │ └── index.html  
+│── sistema-senhas.exe # Servidor compilado em conjunto com o NodeJS  
 │── unins000.exe # Desinstalador gerado pelo instalador  
 └── sistema-senhas.exe # Servidor empacotado para Windows  
 
