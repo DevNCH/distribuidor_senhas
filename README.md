@@ -19,7 +19,7 @@ Ele é composto por um **servidor Node.js** (empacotado em `.exe` para facilitar
 
 ## 📂 Estrutura de pastas
 
-Sistema de Senhas
+Sistema de Senhas  
 │── data/ # Arquivos de dados  
 │ └── estado_senha.json  
 │── images/ # Imagens usadas no sistema  
